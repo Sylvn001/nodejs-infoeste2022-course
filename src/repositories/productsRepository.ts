@@ -1,5 +1,6 @@
 import { Prisma } from "@prisma/client";
 import { db } from "../database/client";
+import { ProductEntity } from "../models/product";
 
 export class ProductRepository {
   async findAll() {
@@ -16,11 +17,37 @@ export class ProductRepository {
     return db.product.delete({ where: { id } });
   }
 
-  async create(createProductDto: Prisma.ProductCreateInput) {
-    return db.product.create({ data: createProductDto });
+  async create(createProductDto: ProductEntity) {
+    const { category_id } = createProductDto;
+    delete createProductDto.category_id;
+    const data: Prisma.ProductCreateInput = {
+      ...createProductDto,
+      Category: {
+        connect: {
+          id: category_id,
+        },
+      },
+    };
+    return db.product.create({ data, include: { Category: true } });
   }
 
-  async update(id: number, updateProductDto: Prisma.ProductUpdateInput) {
-    return db.product.update({ where: { id }, data: updateProductDto });
+  async update(id: number, updateProductDto: ProductEntity) {
+    const { category_id } = updateProductDto;
+    delete updateProductDto.category_id;
+
+    const data: Prisma.ProductUpdateInput = {
+      ...updateProductDto,
+      Category: {
+        connect: {
+          id: category_id,
+        },
+      },
+    };
+
+    return db.product.update({
+      where: { id },
+      data,
+      include: { Category: true },
+    });
   }
 }

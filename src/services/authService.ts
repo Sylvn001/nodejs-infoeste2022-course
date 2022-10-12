@@ -1,4 +1,4 @@
-import { UserEntity } from "./../models/User";
+import { UserEntity } from "../models/user";
 import { UserRepository } from "./../repositories/userRepository";
 import { Prisma } from "@prisma/client";
 import { NotFound } from "../errors/not_found";

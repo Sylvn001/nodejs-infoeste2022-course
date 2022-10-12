@@ -1,7 +1,7 @@
 import { NotFound } from "../errors/not_found";
 import { Prisma } from "@prisma/client";
 import { BadRequest } from "../errors/bad_request";
-import { UserEntity } from "../models/User";
+import { UserEntity } from "../models/user";
 import { UserRepository } from "../repositories/userRepository";
 import { hashSync } from "bcrypt";
 
