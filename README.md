@@ -1,4 +1,4 @@
-# Template Repository Name
+# Infoeste Curso PrismaORM, Node.js e Typescript
 
 > Aplicação voltada para o ensino das tecnologias Node.js, Typescript, PrismaORM e Jest. Desenvolvido durante a semana de informatica da universidade do oeste paulista (INFOESTE)
 
@@ -25,6 +25,8 @@
 ## 💻 Project
 
 O objetivo do projeto é desenvolver uma aplicação do 0 usando PrismaORM, Express, Typescript com base no diagrama a seguir
+![image](https://user-images.githubusercontent.com/50564121/195459626-d523a4b9-192c-49fa-81aa-d40d6e5abe68.png)
+
 
 ## 🚀 How start
 
