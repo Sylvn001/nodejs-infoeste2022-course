@@ -6,12 +6,48 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
 model User {
-  id       Int    @id(autoincrement())
-  email    String
+  id       Int        @id @default(autoincrement())
+  email    String     @unique
   password String
+  UserItem UserItem[]
+
+  @@map("users")
+}
+
+model UserItem {
+  id         Int     @id @default(autoincrement())
+  amount     Int
+  total      Decimal
+  product_id Int
+  user_id    Int
+  product    Product @relation(fields: [product_id], references: [id])
+  user       User    @relation(fields: [user_id], references: [id])
+
+  @@map("user_items")
+}
+
+model Product {
+  id          Int        @id @default(autoincrement())
+  name        String
+  description String
+  price       Decimal
+  stock       Int
+  category_id Int
+  Category    Category   @relation(fields: [category_id], references: [id])
+  UserItem    UserItem[]
+
+  @@map("products")
+}
+
+model Category {
+  id      Int       @id @default(autoincrement())
+  name    String
+  Product Product[]
+
+  @@map("categories")
 }
