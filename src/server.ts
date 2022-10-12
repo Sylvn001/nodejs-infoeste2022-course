@@ -1,9 +1,5 @@
-import express, { Request, Response } from "express";
+import { app } from "./app";
 
-const server = express();
-
-server.get("/", (request: Request, response: Response) => {
-  return response.send("Hello World!");
+app.listen(3000, () => {
+  console.log("Server running in localhost:3000");
 });
-
-export default server;
