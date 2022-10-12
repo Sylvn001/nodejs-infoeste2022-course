@@ -1,6 +1,6 @@
 # Template Repository Name
 
-> Resume of application here
+> Aplicação voltada para o ensino das tecnologias Node.js, Typescript, PrismaORM e Jest. Desenvolvido durante a semana de informatica da universidade do oeste paulista (INFOESTE)
 
 ### 💻 Main language - Version
 
@@ -15,32 +15,37 @@
 
 ![image](https://user-images.githubusercontent.com/50564121/163297818-11a4d919-58a0-4b2b-b65e-110d3aa55f72.png)
 
-
 ## ⚒️ Tecnologies (example)
+
 - [Express](https://expressjs.com/pt-br/)
 - [Jest](https://jestjs.io/)
-- [TypeORM](https://typeorm.io/#/)
-- [Ethereal-Email](https://ethereal.email/)
+- [PrismaORM](https://www.prisma.io/)
 - [Typescript](https://www.typescriptlang.org/)
 
 ## 💻 Project
-This project as developed with purpose to use for all my projects template :D.
+
+O objetivo do projeto é desenvolver uma aplicação do 0 usando PrismaORM, Express, Typescript com base no diagrama a seguir
 
 ## 🚀 How start
-- Install dependencies using `yarn`
-- start web server in localhost using `yarn dev`
+
+- Install dependencies using `npm install`
+- start web server in localhost using `npm run start`
 
 ## 🕸️ Test in WEB
-Open Bowser in [`localhost:3333`](http://localhost:3333).
+
+Open Bowser in [`localhost:3000`](http://localhost:3000).
 
 # 📚 Docs
+
 - OpenApi 3.0 Using Swagger
-- Check Here [BlogApi](https://apiblognestjs.herokuapp.com/api)
+- Check Here [ProjectAPI]()
 
 ## 📝 License
+
 This project use a <a href="./LICENSE"> MIT </a> License
 
 ## :atom_symbol: Follow me!
+
 - Instagram: https://www.instagram.com/sylvn001/
 - Twitch: https://www.twitch.tv/sylvn001
 - GitHub: https://github.com/Sylvn001
