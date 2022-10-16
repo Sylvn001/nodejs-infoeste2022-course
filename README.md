@@ -40,7 +40,6 @@ Open Bowser in [`localhost:3000`](http://localhost:3000).
 # 📚 Docs
 
 - OpenApi 3.0 Using Swagger
-- Check Here [ProjectAPI]()
 
 ## 📝 License
 
