@@ -1,8 +1,9 @@
-import { Router } from "express";
-import { UserController } from "./controllers/userController";
+import { Request, Response, Router } from "express";
 import { AuthController } from "./controllers/authController";
 import { CategoryController } from "./controllers/categoryController";
 import { ProductController } from "./controllers/productController";
+import { UserController } from "./controllers/UserController";
+import { UserAuthenticated } from "./middlewares/authMiddleware";
 
 const userController = new UserController();
 const categoryController = new CategoryController();
@@ -35,8 +36,8 @@ router.post("/products", productController.create);
 router.patch("/products/:id", productController.update);
 router.delete("/products/:id", productController.delete);
 
-router.get("/", (req, res) => {
-  return res.send("hello world");
+router.get("/", UserAuthenticated, (req: Request, res: Response) => {
+  return res.send("hello world id: " + req.id_user);
 });
 
 export { router };
