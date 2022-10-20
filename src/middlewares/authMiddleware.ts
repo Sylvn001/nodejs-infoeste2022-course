@@ -16,7 +16,6 @@ export async function UserAuthenticated(
   if (!authHeader) {
     throw new Unauthorized("Token Missing");
   }
-
   // Bearer jdopwijdlasjdopk123221-jdsaiofjiowopfk13-4jfopsjoisa
   // [0] = Bearer
   // [1] = token
@@ -24,7 +23,7 @@ export async function UserAuthenticated(
   const [, token] = authHeader.split(" ");
 
   try {
-    const { sub } = verify(token, "121ed1d") as IPayload;
+    const { sub } = verify(token, process.env.SECRET) as IPayload;
     request.id_user = sub;
 
     console.log(sub);

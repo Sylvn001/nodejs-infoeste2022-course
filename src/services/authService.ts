@@ -1,9 +1,9 @@
-import { UserEntity } from "../models/user";
 import { UserRepository } from "./../repositories/userRepository";
 import { Prisma } from "@prisma/client";
 import { NotFound } from "../errors/not_found";
 import { compareSync } from "bcrypt";
 import { sign } from "jsonwebtoken";
+import { UserEntity } from "../models/User";
 
 export class AuthService {
   private readonly userRepository = new UserRepository();
@@ -25,9 +25,9 @@ export class AuthService {
   }
 
   async generateToken(user: UserEntity) {
-    const token = sign({ id: user.id, email: user.email }, "121ed1d");
+    const token = sign({ id: user.id, email: user.email }, process.env.SECRET);
 
-    return token;
+    return { token };
   }
 
   async login(loginUserDto: Prisma.UserCreateInput) {

@@ -1,10 +1,10 @@
 import { NotFound } from "../errors/not_found";
 import { Prisma } from "@prisma/client";
 import { BadRequest } from "../errors/bad_request";
-import { UserEntity } from "../models/user";
 import { UserRepository } from "../repositories/userRepository";
 import { hashSync } from "bcrypt";
 import { CreateUserDTO } from "../dto/createUserDTO";
+import { UserEntity } from "../models/User";
 
 export class UserService {
   private readonly userRepository = new UserRepository();

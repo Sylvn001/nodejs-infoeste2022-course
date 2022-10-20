@@ -1,8 +1,10 @@
+/**
+ * @jest-environment ./prisma/prisma-environment-jest
+ */
+
 import { UserService } from "./../services/userService";
-import { db } from "../database/client";
 import { BadRequest } from "../errors/bad_request";
 
-const test_env = process.env;
 let userService: UserService;
 
 describe("Create user", () => {
@@ -25,7 +27,7 @@ describe("Create user", () => {
     expect(user).toHaveProperty("id");
   });
 
-  it("should not be able to create a new user with same email", async () => {
+  it("should not be able to create a user with an existing email", async () => {
     const userData = {
       email: "junioroExiste@test.com",
       password: "abacate",

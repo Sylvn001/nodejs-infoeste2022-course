@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1666233822664" clover="3.2.0">
-  <project timestamp="1666233822664" name="All files">
-    <metrics statements="553" coveredstatements="300" conditionals="15" coveredconditionals="12" methods="62" coveredmethods="11" elements="630" coveredelements="323" complexity="0" loc="553" ncloc="553" packages="8" files="20" classes="20"/>
+<coverage generated="1666238970987" clover="3.2.0">
+  <project timestamp="1666238970987" name="All files">
+    <metrics statements="552" coveredstatements="310" conditionals="17" coveredconditionals="16" methods="62" coveredmethods="12" elements="631" coveredelements="338" complexity="0" loc="552" ncloc="552" packages="8" files="20" classes="20"/>
     <package name="src">
       <metrics statements="55" coveredstatements="54" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="app.ts" path="C:\Users\junio\Desktop\appNTP\src\app.ts">
+      <file name="app.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/app.ts">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -19,7 +19,7 @@
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
       </file>
-      <file name="routes.ts" path="C:\Users\junio\Desktop\appNTP\src\routes.ts">
+      <file name="routes.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/routes.ts">
         <metrics statements="43" coveredstatements="42" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -67,8 +67,51 @@
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="133" coveredstatements="64" conditionals="2" coveredconditionals="1" methods="16" coveredmethods="1"/>
-      <file name="authController.ts" path="C:\Users\junio\Desktop\appNTP\src\controllers\authController.ts">
+      <metrics statements="133" coveredstatements="67" conditionals="2" coveredconditionals="2" methods="16" coveredmethods="1"/>
+      <file name="UserController.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/controllers/UserController.ts">
+        <metrics statements="40" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+      </file>
+      <file name="authController.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/controllers/authController.ts">
         <metrics statements="14" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -85,7 +128,7 @@
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
       </file>
-      <file name="categoryController.ts" path="C:\Users\junio\Desktop\appNTP\src\controllers\categoryController.ts">
+      <file name="categoryController.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/controllers/categoryController.ts">
         <metrics statements="39" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -127,7 +170,7 @@
         <line num="38" count="0" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
       </file>
-      <file name="productController.ts" path="C:\Users\junio\Desktop\appNTP\src\controllers\productController.ts">
+      <file name="productController.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/controllers/productController.ts">
         <metrics statements="40" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -170,53 +213,10 @@
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
       </file>
-      <file name="userController.ts" path="C:\Users\junio\Desktop\appNTP\src\controllers\userController.ts">
-        <metrics statements="40" coveredstatements="21" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-      </file>
     </package>
     <package name="src.database">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="client.ts" path="C:\Users\junio\Desktop\appNTP\src\database\client.ts">
+      <file name="client.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/database/client.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -227,7 +227,7 @@
     </package>
     <package name="src.errors">
       <metrics statements="27" coveredstatements="21" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="1"/>
-      <file name="bad_request.ts" path="C:\Users\junio\Desktop\appNTP\src\errors\bad_request.ts">
+      <file name="bad_request.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/errors/bad_request.ts">
         <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -239,7 +239,7 @@
         <line num="8" count="3" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
-      <file name="not_found.ts" path="C:\Users\junio\Desktop\appNTP\src\errors\not_found.ts">
+      <file name="not_found.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/errors/not_found.ts">
         <metrics statements="9" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -251,7 +251,7 @@
         <line num="8" count="0" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
-      <file name="unathourized.ts" path="C:\Users\junio\Desktop\appNTP\src\errors\unathourized.ts">
+      <file name="unathourized.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/errors/unathourized.ts">
         <metrics statements="9" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -265,9 +265,9 @@
       </file>
     </package>
     <package name="src.middlewares">
-      <metrics statements="63" coveredstatements="25" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
-      <file name="authMiddleware.ts" path="C:\Users\junio\Desktop\appNTP\src\middlewares\authMiddleware.ts">
-        <metrics statements="34" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="62" coveredstatements="25" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="authMiddleware.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/middlewares/authMiddleware.ts">
+        <metrics statements="33" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -301,9 +301,8 @@
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
       </file>
-      <file name="errorMiddleware.ts" path="C:\Users\junio\Desktop\appNTP\src\middlewares\errorMiddleware.ts">
+      <file name="errorMiddleware.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/middlewares/errorMiddleware.ts">
         <metrics statements="29" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -337,8 +336,8 @@
       </file>
     </package>
     <package name="src.repositories">
-      <metrics statements="105" coveredstatements="47" conditionals="1" coveredconditionals="1" methods="16" coveredmethods="1"/>
-      <file name="categoryRepository.ts" path="C:\Users\junio\Desktop\appNTP\src\repositories\categoryRepository.ts">
+      <metrics statements="105" coveredstatements="49" conditionals="2" coveredconditionals="2" methods="16" coveredmethods="2"/>
+      <file name="categoryRepository.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/repositories/categoryRepository.ts">
         <metrics statements="22" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -363,7 +362,7 @@
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
       </file>
-      <file name="productsRepository.ts" path="C:\Users\junio\Desktop\appNTP\src\repositories\productsRepository.ts">
+      <file name="productsRepository.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/repositories/productsRepository.ts">
         <metrics statements="55" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -421,8 +420,8 @@
         <line num="54" count="0" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
       </file>
-      <file name="userRepository.ts" path="C:\Users\junio\Desktop\appNTP\src\repositories\userRepository.ts">
-        <metrics statements="28" coveredstatements="18" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="1"/>
+      <file name="userRepository.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/repositories/userRepository.ts">
+        <metrics statements="28" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -432,16 +431,16 @@
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
@@ -454,8 +453,8 @@
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="161" coveredstatements="80" conditionals="6" coveredconditionals="5" methods="23" coveredmethods="5"/>
-      <file name="authService.ts" path="C:\Users\junio\Desktop\appNTP\src\services\authService.ts">
+      <metrics statements="161" coveredstatements="85" conditionals="7" coveredconditionals="7" methods="23" coveredmethods="5"/>
+      <file name="authService.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/services/authService.ts">
         <metrics statements="40" coveredstatements="16" conditionals="1" coveredconditionals="1" methods="4" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -498,7 +497,7 @@
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
       </file>
-      <file name="categoryService.ts" path="C:\Users\junio\Desktop\appNTP\src\services\categoryService.ts">
+      <file name="categoryService.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/services/categoryService.ts">
         <metrics statements="26" coveredstatements="16" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -527,7 +526,7 @@
         <line num="25" count="0" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
       </file>
-      <file name="productService.ts" path="C:\Users\junio\Desktop\appNTP\src\services\productService.ts">
+      <file name="productService.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/services/productService.ts">
         <metrics statements="28" coveredstatements="18" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -558,8 +557,8 @@
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
       </file>
-      <file name="userService.ts" path="C:\Users\junio\Desktop\appNTP\src\services\userService.ts">
-        <metrics statements="67" coveredstatements="30" conditionals="3" coveredconditionals="2" methods="7" coveredmethods="2"/>
+      <file name="userService.ts" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/services/userService.ts">
+        <metrics statements="67" coveredstatements="35" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -590,18 +589,18 @@
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
         <line num="30" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="32" count="3" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
-        <line num="34" count="3" type="stmt"/>
-        <line num="35" count="3" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="38" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
         <line num="43" count="2" type="stmt"/>
         <line num="44" count="2" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
@@ -631,7 +630,7 @@
     </package>
     <package name="src.sum">
       <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-      <file name="sum.js" path="C:\Users\junio\Desktop\appNTP\src\sum\sum.js">
+      <file name="sum.js" path="/home/junior/Desktop/nodejs-infoeste2022-course/src/sum/sum.js">
         <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="cond" truecount="3" falsecount="0"/>
         <line num="2" count="1" type="stmt"/>
