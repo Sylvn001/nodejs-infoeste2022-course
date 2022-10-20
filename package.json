@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node-dev --transpile-only --ignore-watch node_modules ./src/server.ts",
-    "test": "set NODE_ENV=test && prisma migrate reset --force  && jest"
+    "test": "dotenv -e .env.test -- prisma migrate reset --force  && jest"
   },
   "author": "junior barros",
   "license": "ISC",

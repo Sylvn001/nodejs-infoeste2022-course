@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for repositories/userRepository.ts</title>
+    <title>Code coverage report for src/services/productService.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">repositories</a> userRepository.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/services</a> productService.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -96,12 +96,8 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -119,32 +115,36 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { db } from "../database/client";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CreateProductDTO } from "./../dto/createProductDTO";
 import { Prisma } from "@prisma/client";
+import { ProductRepository } from "../repositories/productsRepository";
+import { UpdateProductDTO } from "../dto/updateProductDTO";
 &nbsp;
-export class UserRepository {
+export class ProductService {
+  private readonly productRepository = new ProductRepository();
+&nbsp;
 <span class="fstat-no" title="function not covered" >  async findAll() {</span>
-<span class="cstat-no" title="statement not covered" >    return db.user.findMany();</span>
+<span class="cstat-no" title="statement not covered" >    return this.productRepository.findAll();</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-&nbsp;
-  async findByEmail(email: string) {
-    return db.user.findUnique({ where: { email } });
-  }
 &nbsp;
 <span class="fstat-no" title="function not covered" >  async findOne(id: number) {</span>
-<span class="cstat-no" title="statement not covered" >    return db.user.findFirst({ where: { id } });</span>
+<span class="cstat-no" title="statement not covered" >    return this.productRepository.findOne(id);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async create(createUserDto: Prisma.UserCreateInput) {</span>
-<span class="cstat-no" title="statement not covered" >    return db.user.create({ data: createUserDto });</span>
+<span class="fstat-no" title="function not covered" >  async create(createProductDto: CreateProductDTO) {</span>
+<span class="cstat-no" title="statement not covered" >    return this.productRepository.create(createProductDto);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async update(id: number, updateUserDto: Prisma.UserUpdateInput) {</span>
-<span class="cstat-no" title="statement not covered" >    return db.user.update({ where: { id }, data: updateUserDto });</span>
+<span class="fstat-no" title="function not covered" >  async update(id: number, updateProductDto: UpdateProductDTO) {</span>
+<span class="cstat-no" title="statement not covered" >    return this.productRepository.update(id, updateProductDto);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
 <span class="fstat-no" title="function not covered" >  async delete(id: number) {</span>
-<span class="cstat-no" title="statement not covered" >    return db.user.delete({ where: { id } });</span>
+<span class="cstat-no" title="statement not covered" >    return this.productRepository.delete(id);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -154,16 +154,16 @@ export class UserRepository {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-10-20T02:42:05.766Z
+                at 2022-10-20T02:43:42.615Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
     </body>
 </html>
     

@@ -4,6 +4,7 @@ import { BadRequest } from "../errors/bad_request";
 import { UserEntity } from "../models/user";
 import { UserRepository } from "../repositories/userRepository";
 import { hashSync } from "bcrypt";
+import { CreateUserDTO } from "../dto/createUserDTO";
 
 export class UserService {
   private readonly userRepository = new UserRepository();
@@ -26,7 +27,7 @@ export class UserService {
     throw new BadRequest("Not Found");
   }
 
-  async create(createUserDto: Prisma.UserCreateInput) {
+  async create(createUserDto: CreateUserDTO) {
     const userAlreadyExists = await this.userRepository.findByEmail(
       createUserDto.email
     );

@@ -1,5 +1,7 @@
+import { CreateProductDTO } from "./../dto/createProductDTO";
 import { Prisma } from "@prisma/client";
 import { db } from "../database/client";
+import { UpdateProductDTO } from "../dto/updateProductDTO";
 import { ProductEntity } from "../models/product";
 
 export class ProductRepository {
@@ -17,7 +19,7 @@ export class ProductRepository {
     return db.product.delete({ where: { id } });
   }
 
-  async create(createProductDto: ProductEntity) {
+  async create(createProductDto: CreateProductDTO) {
     const { category_id } = createProductDto;
     delete createProductDto.category_id;
     const data: Prisma.ProductCreateInput = {
@@ -31,7 +33,7 @@ export class ProductRepository {
     return db.product.create({ data, include: { Category: true } });
   }
 
-  async update(id: number, updateProductDto: ProductEntity) {
+  async update(id: number, updateProductDto: UpdateProductDTO) {
     const { category_id } = updateProductDto;
     delete updateProductDto.category_id;
 

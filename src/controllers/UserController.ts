@@ -1,3 +1,4 @@
+import { CreateUserDTO } from "./../dto/createUserDTO";
 import { Prisma } from "@prisma/client";
 import { Response, Request } from "express";
 import { UserService } from "../services/userService";
@@ -17,7 +18,7 @@ export class UserController {
   }
 
   async create(req: Request, res: Response) {
-    const createUserDto: Prisma.UserCreateInput = req.body;
+    const createUserDto: CreateUserDTO = req.body;
 
     const user = await userService.create(createUserDto);
 

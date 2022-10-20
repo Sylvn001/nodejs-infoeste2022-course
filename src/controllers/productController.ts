@@ -1,3 +1,4 @@
+import { CreateProductDTO } from "./../dto/createProductDTO";
 import { Prisma } from "@prisma/client";
 import { Response, Request } from "express";
 import { ProductService } from "../services/productService";
@@ -17,7 +18,7 @@ export class ProductController {
   }
 
   async create(req: Request, res: Response) {
-    const createproductDto: Prisma.ProductCreateInput = req.body;
+    const createproductDto: CreateProductDTO = req.body;
 
     const product = await productService.create(createproductDto);
 
