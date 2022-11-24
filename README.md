@@ -2,7 +2,7 @@
 
 > Aplicação voltada para o ensino das tecnologias Node.js, Typescript, PrismaORM e Jest. Desenvolvido durante a semana de informatica da universidade do oeste paulista (INFOESTE)
 
-### 💻 Main language - Version
+### 💻 Nodejs. 16 - LTS
 
 <p align="center">
   <a href="#%EF%B8%8F-tecnologies">Tecnologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -15,7 +15,7 @@
 
 ![image](https://user-images.githubusercontent.com/50564121/163297818-11a4d919-58a0-4b2b-b65e-110d3aa55f72.png)
 
-## ⚒️ Tecnologies (example)
+## ⚒️ Tecnologies
 
 - [Express](https://expressjs.com/pt-br/)
 - [Jest](https://jestjs.io/)
